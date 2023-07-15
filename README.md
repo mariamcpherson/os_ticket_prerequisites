@@ -11,7 +11,7 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 - Remote Desktop
 - Internet Information Services (IIS)
 
-<h2>Operating Systems Used </h2>
+<h2>Operating Systems Used</h2>
 
 - Windows 10</b> (21H2)
 
@@ -163,7 +163,7 @@ C:\inetpub\wwwroot\osTicket\include\ost/sampleconfig.php
 </p>
 <br />
 <p>
-Now, assign permissions to this "ost-config" file. Right-click on the file, Properties → Security → Advanced → Disable Inheritance
+Now, assign permissions to this "ost-config.php" file. Right-click on the file, Properties → Security → Advanced → Disable Inheritance
 <p>
 "Remove All Permissions"
 
@@ -220,7 +220,54 @@ In the MySQL Database field, I entered the name osTicket, as it is the Database 
 </p>
 
 <p>
-Now, we can FINALLY click "Install Now!"
+Now, we can FINALLY click "Install Now!" The installation is complete! 
+</p>
+
+
+<h1>osTicket - Clean Up</h1>
+
+<p>
+We have successfully installed our Ticketing system (finally!) and now we're going to do some clean up on our Virtual Machine, because we like things nice and tidy. And, lastly, we will tie the last loose end and change the Permissions. 
+</p>
+
+
+<p>
+The first thing we're going to get rid of is the "setup" subfolder in the osTicket folder.
+</p>
+
+<p>
+C:\inetpub\wwwroot\osTicket\setup
+</p>
+
+<p>
+And, then, let's go back to the "os-config.php" permissions:
+</p>
+<p>
+C:\inetpub\wwwroot\osTicket\include\os-config.php
+<p>
+Right-click on "os-config.php", Properties → Security → Advanced, and uncheck:
+</p>
+<p>
+Full Control
+</p>
+<p>
+Modify
+</p>
+<p>
+Write
+</p>
+
+<h2>Accessing osTicket</h2>
+<p>
+In your web browser, type this URL: http://localhost/osTicket/scp/login/php
+</p>
+
+<p>
+This is how we'd log in as admin. We-ll be prompted to log in. And we'd need to enter the Username and Password selected when we set up osTicket.
+</p>
+
+<p>
+To access osTicket as an end user, without admin rights, use this URL: http://localhost/osTicket/
 </p>
 </p>
 </p>
@@ -228,6 +275,8 @@ Now, we can FINALLY click "Install Now!"
 </p>
 </p>
 </p>
+
+
 
 
 
