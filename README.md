@@ -49,14 +49,18 @@ First, we'll start by setting up all the prerequisites needed for the osTicket i
 <p>
   X CGI
 </p>
- <p>
-  X Common HTTP Features
-</p>
   
 <p>
  <img src="https://github.com/mariamcpherson/os_ticket_prerequisites/assets/139581822/0ae1c3fc-6545-4c83-a121-bc7a1e7e2776)"/>
 </p>
 
+ <p>
+  X Common HTTP Features (Check all options)
+</p>
+<img src="(https://github.com/mariamcpherson/os_ticket_prerequisites/assets/139581822/c96eb78b-378e-4975-82a1-0e077b1e0cb9)"/>
+ <p>
+  
+</p>
 <p>
  Control Panel → Programs → Turn Windows Features on or off → Internet Information Services → Web Management Tools → IIS Management Console
  </p>
@@ -65,6 +69,8 @@ First, we'll start by setting up all the prerequisites needed for the osTicket i
 <img src="https://github.com/mariamcpherson/os_ticket_prerequisites/assets/139581822/787613cc-1011-415a-98de-6cef95fc966b)"/>
 </p>
 <br />
+
+
 
 <p>
   - Step 3: Install PHP Manager for IIS.
