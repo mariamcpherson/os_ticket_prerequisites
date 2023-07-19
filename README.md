@@ -307,7 +307,7 @@ This is how we'd log in as admin. We-ll be prompted to log in. And we'd need to 
 </p>
 
 <p>
-To access osTicket as an end user, without admin rights, use this URL: http://localhost/osTicket/
+To access osTicket as an end user, without admin rights, use this URL: http:/localhost/osTicket/
 </p>
 </p>
 </p>
