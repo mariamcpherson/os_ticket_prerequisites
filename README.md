@@ -46,6 +46,7 @@ First, we'll start by setting up all the prerequisites needed for the osTicket i
 - Step 2: Enable IIS in Windows with CGI and Common HTTP Features and IIS Management Console.
   Control Panel → Programs → Turn Windows Features on or off → Internet Information Services → World Wide Services → Apllication Development Features 
 </p>
+
 <p>
   X CGI
 </p>
@@ -54,13 +55,14 @@ First, we'll start by setting up all the prerequisites needed for the osTicket i
  <img src="https://github.com/mariamcpherson/os_ticket_prerequisites/assets/139581822/0ae1c3fc-6545-4c83-a121-bc7a1e7e2776)"/>
 </p>
 
- <p>
+<p>
   X Common HTTP Features (Check all options)
 </p>
-<img src="(https://github.com/mariamcpherson/os_ticket_prerequisites/assets/139581822/c96eb78b-378e-4975-82a1-0e077b1e0cb9)"/>
- <p>
-  
+
+<p>
+<img src="https://github.com/mariamcpherson/os_ticket_prerequisites/assets/139581822/c96eb78b-378e-4975-82a1-0e077b1e0cb9"/>
 </p>
+  
 <p>
  Control Panel → Programs → Turn Windows Features on or off → Internet Information Services → Web Management Tools → IIS Management Console
  </p>
@@ -110,7 +112,25 @@ Now that we have all our prerequisite configuration, we can start installing osT
 </p>
 
 <p>
-- Step 1: Download osTicket, and extract and copy the "upload" folder to c:\inetpub\wwwroot. Rename "upload" folder, "osTicket".
+- Step 1: Run IIS as an administrator. Go to PHP Manager and click on Register New PHP Version.
+</p>
+
+
+<p>
+ <img src="https://github.com/mariamcpherson/os_ticket_prerequisites/assets/139581822/2d606d31-1a62-48fa-99f6-9c7569a389b1"/>
+</p>
+
+<p>
+Then browse to file C:\PHP\php.cgi
+</p>
+
+
+<p>
+ <img src="https://github.com/mariamcpherson/os_ticket_prerequisites/assets/139581822/08261bb6-67da-4f38-b6a1-f6b8b61e2c00"/>
+</p>
+
+<p>
+- Step 2: Download osTicket, and extract and copy the "upload" folder to c:\inetpub\wwwroot. Rename "upload" folder, "osTicket".
 </p>
 
 <p>
@@ -119,7 +139,7 @@ Now that we have all our prerequisite configuration, we can start installing osT
 <br />
  
 <p>
-- Step 2: Open IIS, and Stop and Start the server. Then, go to Sites → Default → osTicket
+- Step 3: Open IIS, and Stop and Start the server. Then, go to Sites → Default → osTicket
 </p>
 On the right, click "Browse *:80 
 </p>
@@ -159,7 +179,7 @@ php_opcache.dll
 
 
 <p>
-- Step 3: Rename the "ost-sampleconfig.php" file inside the osTicket folder in your hard drive to "ost/config".
+- Step 4: Rename the "ost-sampleconfig.php" file inside the osTicket folder in your hard drive to "ost/config".
 </p>
 <p>
 C:\inetpub\wwwroot\osTicket\include\ost/sampleconfig.php
@@ -192,7 +212,7 @@ Now, if we go back to the Web browser where we were setting up the osTicket inst
 </p>
 
 <p>
-- Step 4: download and install HeidiSQL to connect to a SQL server and install a Database.
+- Step 5: download and install HeidiSQL to connect to a SQL server and install a Database.
 </p>
 
 <p>
